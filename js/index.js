@@ -3,3 +3,9 @@
 
 document.body.style.backgroundColor = "black"
 
+// Title
+let pageTitle = document.createElement("div")
+pageTitle.innerHTML = 'My Page'
+document.body.appendChild(pageTitle)
+pageTitle.style.color = "white"
+pageTitle.style.textAlign = "center"
