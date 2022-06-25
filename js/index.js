@@ -78,20 +78,5 @@ function appendComment(event) {
     commentContainer.append(commentValue)
     commentContainer.style.color = "red"
     
-    // commentAppended.style.color = "white"
-
     commentValue = document.getElementById("comment").value = " "
-
-
-    // let commentContainer = document.createElement('div')
-    // document.body.appendChild(commentContainer)
-
-    // if(commentValue) {
-    //     commentContainer.appendChild(commentValue)
-    //     commentValue = document.getElementById("comment").value
-    // }
-
-
-
-
 }
