@@ -71,17 +71,25 @@ function appendComment(event) {
     event.preventDefault()
 
     let commentValue = document.getElementById("comment").value
-
     console.log(commentValue)
-    console.log(event.target.value)
 
     let commentContainer = document.createElement('div')
     document.body.appendChild(commentContainer)
+    commentContainer.append(commentValue)
+    commentContainer.style.color = "red"
+    
+    // commentAppended.style.color = "white"
 
-    if(commentValue) {
-        commentContainer.appendChild(commentValue)
-        commentValue = document.getElementById("comment").value
-    }
+    commentValue = document.getElementById("comment").value = " "
+
+
+    // let commentContainer = document.createElement('div')
+    // document.body.appendChild(commentContainer)
+
+    // if(commentValue) {
+    //     commentContainer.appendChild(commentValue)
+    //     commentValue = document.getElementById("comment").value
+    // }
 
 
 
