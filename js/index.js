@@ -51,13 +51,13 @@ document.body.appendChild(commentDiv)
 let commentForm = document.createElement('div')
 commentForm.innerHTML +=
 `
-<h1>Say Hello!</h1>
+<h3 style="color: white">Say Hello!</h3>
 <form>
 <textarea id="comment">
 
 </textarea>
 <br/>
-<input type="submit" value="Add Comment">
+<input type="submit" id="submitBtn" value="Add Comment">
 
 </form>
 `
@@ -65,11 +65,10 @@ commentForm.style.textAlign = "center"
 commentDiv.appendChild(commentForm)
 
 // append comment text onto DOM
-commentForm.addEventListener("submit", appendComment)
+commentForm.addEventListener("submit",  appendComment)
 
 function appendComment(event) {
     event.preventDefault()
-
     let commentValue = document.getElementById("comment").value
     console.log(commentValue)
 
